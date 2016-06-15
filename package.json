@@ -1,0 +1,31 @@
+{
+  "name": "s3-uploader-cli",
+  "version": "1.0.0",
+  "description": "AWS S3 uploader CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebastianOsuna/s3-uploader-cli.git"
+  },
+  "keywords": [
+    "s3",
+    "uploader",
+    "cli"
+  ],
+  "bin": {
+    "s3uploader": "./bin/s3uploader"
+  },
+  "author": "Sebastian Osuna <jsebastianosuna@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SebastianOsuna/s3-uploader-cli/issues"
+  },
+  "homepage": "https://github.com/SebastianOsuna/s3-uploader-cli#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "s3": "^4.4.0"
+  }
+}
