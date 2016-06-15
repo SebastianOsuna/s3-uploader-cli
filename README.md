@@ -3,7 +3,7 @@ npm install -g s3-uploader-cli
 ```
 
 ```
-s3uploader -b my_bucket -r us-east-1 -d /var/log -i ".*.log.+" --clean
+s3uploader -b my_bucket -r us-east-1 -d /var/log -i ".*.log.+" -k mykey -s mysecret --clean
 ```
 
 ## Options
@@ -15,6 +15,10 @@ s3uploader -b my_bucket -r us-east-1 -d /var/log -i ".*.log.+" --clean
 `-d`, `directory`: Root directory. The RegExp provided by `-i` only makes a shallow match of this directory.
 
 `-i`, `input`: JS Regexp to filter files to be uploaded. Use `"`.
+
+`-k`, `key`: AWS key.
+
+`-s`, `secret`: AWS secret.
 
 `--clean` **optional**: Delete original files after being uploaded.
 
